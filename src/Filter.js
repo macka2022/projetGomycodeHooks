@@ -6,7 +6,9 @@ function Filter({ onFilter }) {
 
   const handleTitleChange = (event) => {
     setTitleFilter(event.target.value);
-    onFilter({ title: event.target.value, rating: ratingFilter });
+    const ids=2
+    const id=ids+1
+    onFilter({ id:id , title: event.target.value, rating: ratingFilter });
   };
 
   const handleRatingChange = (event) => {
